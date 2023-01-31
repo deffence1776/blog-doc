@@ -18,6 +18,8 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation "org.apache.camel.springboot:camel-spring-boot-starter"
+	implementation 'org.apache.camel.springboot:camel-timer-starter'
+
 	implementation "org.apache.camel.springboot:camel-jackson-starter"
 	implementation "org.apache.camel:camel-endpointdsl"
 

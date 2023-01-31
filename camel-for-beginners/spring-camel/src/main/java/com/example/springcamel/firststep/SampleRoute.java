@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
 public class SampleRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
-        from("direct:xxx")
-        //ボディ部の文字列をjsonとしてパースし、JavaBeanにマッピング
-                .unmarshal().json(JsonLibrary.Jackson, RouteInput.class)
-                //メッセージヘッダーに値を設定
-                .setHeader("inputDirPath", simple("tmpDir"))
-                .to("file:xyz");
+//        from("direct:xxx")
+//        //ボディ部の文字列をjsonとしてパースし、JavaBeanにマッピング
+//                .unmarshal().json(JsonLibrary.Jackson, RouteInput.class)
+//                //メッセージヘッダーに値を設定
+//                .setHeader("inputDirPath", simple("tmpDir"))
+//                .to("file:xyz");
     }
 }
